@@ -1,0 +1,50 @@
+{
+  "name": "simple_chat_web",
+  "version": "1.0.0",
+  "description": "to make a platform for simple chat service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./config/webpack.config.js",
+    "start": "webpack serve --config ./config/webpack.config.js "
+  },
+  "author": "cl",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^5.2.5",
+    "antd": "^5.8.2",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "6.3.0",
+    "slate": "^0.94.1",
+    "slate-react": "^0.98.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.19",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/parser": "^6.3.0",
+    "@umijs/fabric": "^4.0.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^3.0.1",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "url-loader": "^4.1.1",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.9.2"
+  }
+}

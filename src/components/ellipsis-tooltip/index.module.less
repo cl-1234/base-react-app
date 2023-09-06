@@ -1,0 +1,11 @@
+.ellipsisWrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  ~ div .ant-tooltip-inner {
+    max-height: 78px;
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+}

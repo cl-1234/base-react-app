@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+
+# production
+/dist
+.vscode
+config
+public
+.eslintrc.js
