@@ -1,0 +1,100 @@
+@import '@/styles/layout.less';
+.appLayoutWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .appLayoutHeaderWrapper {
+    display: flex;
+    align-items: center;
+    height: @layoutHeaderHeight;
+    padding: 0 16px;
+    background-image: linear-gradient(270deg, #291e40 0%, #0a324e 100%);
+    .brand {
+      width: 180px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .logoImg {
+        width: 108px;
+        height: 16px;
+      }
+    }
+    .freeContent {
+      flex: 1;
+    }
+    .userContent {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      .split {
+        width: 1px;
+        height: 16px;
+        opacity: 0.2;
+        background: #ffffff;
+        margin: 0 20px;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        .userAvatar {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+        }
+        .userOper {
+          display: flex;
+          align-items: center;
+          margin-left: 6px;
+          .userName {
+            width: 72px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 700;
+            font-size: 14px;
+          }
+          .downArrow {
+            width: 24px;
+            height: 24px;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+  .mainContent {
+    // 这个也可以设置父元素为flex布局，然后设置他的flex属性为1，这一次通过设置高度减法
+    height: calc(100% - @layoutHeaderHeight);
+    overflow: hidden;
+    display: flex;
+    .menuList {
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      flex-shrink: 0;
+    }
+    :global {
+      .ant-menu {
+        background: @pageBg;
+        height: 100%;
+        width: @menuWidth;
+        .ant-menu-item-selected {
+          background: linear-gradient(270deg, #6448a1 0%, #176faf 100%);
+          color: #f4f5f6 !important;
+          font-weight: 600;
+          font-size: 14px;
+        }
+        .ant-menu-item {
+          font-weight: 600;
+          font-size: 14px;
+          color: #111111;
+        }
+      }
+    }
+    .contentWrapper {
+      height: 100%;
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+}

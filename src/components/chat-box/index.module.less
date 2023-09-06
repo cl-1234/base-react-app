@@ -1,0 +1,29 @@
+.chatBoxWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 8px 0;
+  .chatBoxTool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chatBox {
+    background: #fff;
+    box-shadow: 0 16px 20px 0 rgba(174, 167, 223, 0.2);
+    margin-bottom: -2px;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 80px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.16s;
+    margin-top: 8px;
+    :global {
+      .chatEdit {
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+}

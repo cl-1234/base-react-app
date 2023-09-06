@@ -1,0 +1,12 @@
+{
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.referencesCodeLens.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
